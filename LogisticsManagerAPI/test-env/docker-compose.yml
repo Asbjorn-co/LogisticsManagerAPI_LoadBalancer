@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  logisticsmgr-svc:
+    image: asbjorndev/logisticsmanager-image:latest
+    expose:
+      - "80"
+
+  nginx:
+    image: nginx:latest
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - logisticsmgr-svc
+    ports:
+      - "4000:4000"

@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+  <Company>Handel og Vandel A/S</Company>
+<Authors>Dit Navn</Authors>
+<Copyright>2024 HTU Aps</Copyright>
+<AssemblyVersion>1.0.1.1</AssemblyVersion>
+<FileVersion>1.0.1.1</FileVersion>
+<InformationalVersion>1.0.0</InformationalVersion>
+<Description>
+1.0.0 Updated with semantic versioning
+0.9.0 Dockerfile Service Added to App
+</Description>
+
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+</Project>
